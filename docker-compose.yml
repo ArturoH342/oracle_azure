@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  api-get-reporte:
+    build: 
+      dockerfile: Dockerfile
+      context: ./getReporte/
+    entrypoint: "npm start"
+    ports:
+      - "8080:8080"
+
+  api-get-guardar:
+    build: 
+      dockerfile: Dockerfile
+      context: ./getGuardar/
+    entrypoint: "npm start"
+    ports:
+      - "8081:8081"
+
+  api-get-plataforma:
+    build:
+      dockerfile: Dockerfile
+      context: ./getPlataforma/
+    entrypoint: "npm start"
+    ports:
+      - "8082:8082"
+
+  # kafkaConsumer:
+  #   build: ./getGuardar/Dockerfile
+  #   ports:
+  #     - "8083:8083"

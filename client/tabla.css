@@ -1,0 +1,17 @@
+.body{
+    background-color: black;
+}
+.formulario_registrar {
+    background :white;
+    width : 30%;
+    margin: 0 auto;
+    padding : 50px;
+    border-radius: 20px;
+    -webkit-box-shadow: 4px 4px 18px 6px rgba(252,252,252,1);
+    -moz-box-shadow: 4px 4px 18px 6px rgba(252,252,252,1);
+    box-shadow: 4px 4px 18px 6px rgba(252,252,252,1);
+}
+
+.rs{
+    margin-top: 15.5%;
+}
