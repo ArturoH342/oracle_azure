@@ -24,7 +24,7 @@ function main(){
     a.innerHTML = hora + ":" + min +  ":" +sec + " " +  tiempo_reloj() ; 
 
 
-    fetch('http://localhost:8084/getVisita')
+    fetch('http://129.213.123.223:8084/getVisita')
     .then(response => response.json())
     .then(data => {
         
@@ -38,7 +38,7 @@ function main(){
             b.innerHTML = numero_ac_ma ;
             
 
-            fetch('http://localhost:8085/postVisita', 
+            fetch('http://129.213.123.223:8085/postVisita', 
             {
                 method: 'POST',
                 headers: {
