@@ -1,4 +1,4 @@
-// const db = require('../database/AutonomousDB');
+
 const db = require('../database/Mysqldb');
 
 class JuegosModel {
