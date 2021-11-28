@@ -28,7 +28,7 @@ function main(){
     .then(response => response.json([]))
     .then(data => {
         
-        data.dataforEach(element => {
+        data.data.forEach(element => {
             
             
             numero_ac = parseInt(element);
