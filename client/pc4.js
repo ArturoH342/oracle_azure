@@ -25,9 +25,10 @@ function main(){
 
 
     fetch('http://129.213.123.223:8084/getVisita')
-    .then(response => response.json([]))
+    .then(response => response.json())
     .then(data => {
         
+        console.log(data.data);
         data.data.forEach(element => {
             
             
