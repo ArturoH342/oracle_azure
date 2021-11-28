@@ -7,7 +7,7 @@ class JuegosModel {
 
 
     async list (){
-        let query = "select MAX(NUMERO) from numero ";
+        let query = "select numero from numero ";
         return db.query(query,[]);
     }
 
