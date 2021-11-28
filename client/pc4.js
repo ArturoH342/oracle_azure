@@ -25,10 +25,10 @@ function main(){
 
 
     fetch('http://129.213.123.223:8084/getVisita')
-    .then(response => response.json())
+    .then(response => response.json([]))
     .then(data => {
         
-        data.data.rows.forEach(element => {
+        data.dataforEach(element => {
             
             
             numero_ac = parseInt(element);
